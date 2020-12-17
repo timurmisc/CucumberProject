@@ -7,9 +7,21 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith (Cucumber.class)
 @CucumberOptions(
-		 features = "holiday.feature"
-		 ,glue={"holiday"}
+		 
+		//features = {"/src/test/resources/features"},
+		//glue={"src/test/java/stepDefinition"}
+		
+		//features = {"/src/test/resources/features"},
+		//glue={"stepDefinition"}
+		 
+		 features = {"features"},
+		 glue ={"src/test/java/stepDefinition"}
 		 )
-public class runner {
 
-}
+
+
+
+
+	public class runner {
+
+			}
